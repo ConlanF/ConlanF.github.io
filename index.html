@@ -2,7 +2,6 @@
 <html>
   <head>
     <title>Conlan's Website</title>
-    <link rel="icon" href="images/website_icon.jpg" type="image/jpg">
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
@@ -15,16 +14,24 @@
       </ul>
     </section>
     <section>
-      <img src="images/website_icon.jpg" alt="Website Icon" width="200" height="220">
+      <img id="website-icon" src="images/website_icon.jpg" alt="Website Icon" width="200" height="220">
     </section>
-    <!-- <script>
-        window.addEventListener('load', function () {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.body.classList.add('dark-mode');
-            } else {
-                document.body.classList.add('light-mode');
-            }
-        });
-    </script> -->
+    <script>
+      function switchImage() {
+        var img = document.getElementById('website-icon');
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          img.src = 'images/website_icon.jpg';
+        } else {
+          img.src = 'images/website_icon_inverted.jpg';
+        }
+      }
+  
+      switchImage();
+    
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+        switchImage();
+      });
+    </script>
+    
   </body>
 </html>
