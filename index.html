@@ -3,58 +3,7 @@
   <head>
     <title>Conlan's Website</title>
     <link rel="icon" href="images/website_icon.jpg" type="image/jpg">
-    <style>
-      @font-face {
-        font-family: 'Glass TTY VT220';
-        src: url('fonts/Glass_TTY_VT220.ttf') format('truetype');
-      }
-
-      body {
-        background-color: black;
-        color: #06fa61;
-        font-family: 'Glass TTY VT220', monospace;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 24px;
-        text-align: center;
-      }
-
-      h2 {
-        font-size: 18px;
-        text-align: center;
-      }
-
-      p {
-        font-size: 16px;
-        text-align: left;
-      }
-
-      ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-        width: 50%;
-        margin: auto;
-      }
-
-      li {
-        margin-bottom: 10px;
-      }
-
-      a:link {
-        color: #06fa61;
-      }
-
-      a:visited {
-        color: #0fbd18;
-      }
-
-      a:hover, a:active {
-        color: green;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <h1>CONLAN'S WEBSITE</h1>
@@ -66,7 +15,16 @@
       </ul>
     </section>
     <section>
-      <img src="images/website_icon.jpg" alt="Website Icon" width="200" height="200">
+      <img src="images/website_icon.jpg" alt="Website Icon" width="200" height="220">
     </section>
+    <!-- <script>
+        window.addEventListener('load', function () {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.add('light-mode');
+            }
+        });
+    </script> -->
   </body>
 </html>
