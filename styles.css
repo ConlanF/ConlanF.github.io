@@ -1,0 +1,60 @@
+@font-face {
+	font-family: 'Glass TTY VT220';
+	src: url('fonts/Glass_TTY_VT220.ttf') format('truetype');
+}
+
+body {
+	background-color: black;
+	color: #06fa61;
+	font-family: 'Glass TTY VT220', monospace;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 24px;
+	text-align: center;
+	padding: 5px;
+	border: medium dashed rgba(6, 250, 97, .5);
+	border-radius: 5px;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 18px;
+	font-style: italic;
+	text-align: center;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+p {
+	font-size: 16px;
+	text-align: left;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+a:link {
+	color: #06fa61;
+}
+
+a:visited {
+	color: #0fbd18;
+}
+
+a:hover,
+a:active {
+	color: green;
+}
