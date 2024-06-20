@@ -1,4 +1,4 @@
-/* @font-face {
+ @font-face {
 	font-family: 'Glass TTY VT220';
 	src: url('fonts/Glass_TTY_VT220.ttf') format('truetype');
 }
@@ -57,4 +57,4 @@ a:visited {
 a:hover,
 a:active {
 	color: green;
-} */
+} 
