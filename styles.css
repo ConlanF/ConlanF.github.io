@@ -9,7 +9,7 @@
 
 body {
 	background-color: light-dark(white, black);
-	color: light-dark(#f9069f, #06fa61);
+	color: light-dark(#626262 #06fa61);
 	font-family: 'Glass TTY VT220', monospace;
 	text-align: center;
 	width: 100vw;
@@ -20,7 +20,7 @@ h1 {
 	font-size: 28px;
 	text-align: center;
 	padding: 5px;
-	border: medium dashed light-dark(rgba(249,6,159,.5), rgba(6, 250, 97, .5));
+	border: medium dashed light-dark(rgba(98,98,98,.5), rgba(6, 250, 97, .5));
 	border-radius: 5px;
 	display: inline-block;
 }
@@ -51,26 +51,14 @@ li {
 }
 
 a:link {
-	color: light-dark(#f9069f, #06fa61);
+	color: light-dark(#626262, #06fa61);
 }
 
 a:visited {
-	color: light-dark(#b8167d, #0fbd18);
+	color: light-dark(#a7a0a0, #0fbd18);
 }
 
 a:hover,
 a:active {
-	color: light-dark(#f9069f, green);
+	color: light-dark(#363333, green);
 } 
-
-.website-icon {
-	width: 200px;
-	height: 220px;
-	background-image: url('images/website_icon_inverted.jpg'); 
-  } 
-  
-  @media (prefers-color-scheme: dark) {
-	.website-icon {
-	  background-image: url('images/website_icon.jpg');
-	}
-  } 
