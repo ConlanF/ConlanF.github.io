@@ -9,7 +9,7 @@
 
 body {
 	background-color: light-dark(white, black);
-	color: light-dark(#626262 #06fa61);
+	color: light-dark(#626262, #06fa61);
 	font-family: 'Glass TTY VT220', monospace;
 	text-align: center;
 	width: 100vw;
@@ -62,3 +62,7 @@ a:hover,
 a:active {
 	color: light-dark(#363333, green);
 } 
+
+img {
+	border: 5px solid light-dark(#626262, #06fa61);
+  }
