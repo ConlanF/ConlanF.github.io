@@ -1,37 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="">
   <head>
-    <title>Conlan's Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
   </head>
   <body>
-    <h1>CONLAN'S WEBSITE</h1>
-    <section>
-      <h2>CONTACT</h2>
-      <ul>
-        <li><a href="https://www.linkedin.com/in/conlanfenerty">LINKEDIN</a></li>
-        <li><a href="mailto:me@conlanfenerty.com">ME@CONLANFENERTY.COM</a></li>
-      </ul>
-    </section>
-    <section>
-      <img id="website-icon" src="images/website_icon.jpg" alt="Website Icon" width="200" height="220">
-    </section>
-    <script>
-      function switchImage() {
-        var img = document.getElementById('website-icon');
-        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-          img.src = 'images/website_icon.jpg';
-        } else {
-          img.src = 'images/website_icon_bw.jpg';
-        }
-      }
-  
-      switchImage();
-    
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
-        switchImage();
-      });
-    </script>
-    
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
